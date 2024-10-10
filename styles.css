@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #212121;
+    padding: 20px;
+    color: #FFF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+
+.menu a, .subscriptions a, .you-block a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.menu a i, .subscriptions a i, .you-block a i {
+    margin-right: 10px;
+}
+
+.menu a:hover, .subscriptions a:hover, .you-block a:hover {
+    background-color: #383838;
+    border-radius: 4px;
+}
+
+h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ddd;
+    background-color: #121212;
+    color: #FFF;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-btn {
+    background-color: #333;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #FFF;
+}
+
+.mic-btn {
+    background-color: #333;
+    border: 1px solid #ddd;
+    padding: 8px;  
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 40px;  
+    height: 40px; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic-btn i {
+    color: #FFF;
+    font-size: 14px;  
+}
+
+
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons span {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icons span:hover {
+    color: #ccc;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    background-color: #383838;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.categories button:hover {
+    background-color: #555;
+}
+
+/* Video Grid */
+.video-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    width: calc(33.333% - 20px);
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video-info {
+    color: #FFF;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.channel-name {
+    font-size: 14px;
+    color: #AAA;
+}
